@@ -9,7 +9,7 @@ const Projects = () => {
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-xl text-slate-300">
             Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam
-            voluptatum cupiditate veritatis in accusamus quisquam.
+            voluptatum cupiditate veritatis in accusamus quisquam. TESTTTTTTTTTT
           </p>
         </div>
         <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
