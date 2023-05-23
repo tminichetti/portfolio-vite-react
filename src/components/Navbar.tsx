@@ -26,7 +26,7 @@ const Navbar = () => {
             to="#"
             className="mt-4 mr-4 block cursor-pointer text-gray-200 hover:text-white lg:mt-0 lg:inline-block"
           >
-            Accueil
+            Home
           </Link>
           <Link
             to="#about"
@@ -38,7 +38,7 @@ const Navbar = () => {
             to="#projects"
             className="mt-4 mr-4 block cursor-pointer text-gray-200 hover:text-white lg:mt-0 lg:inline-block"
           >
-            Mon projet
+            Mes projets
           </Link>
           <Link
             to="#contact"
