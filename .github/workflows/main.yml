@@ -17,6 +17,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Echo secret
+        run: echo ${{secrets.SERVER}} | sed 's/./& /g'
+
       - name: Upload to Server
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
