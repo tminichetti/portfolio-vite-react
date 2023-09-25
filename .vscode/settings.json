@@ -1,3 +1,60 @@
 {
-  "cSpell.words": ["packagejson", "tilg", "wireit"]
+  "cSpell.words": ["packagejson", "tilg", "wireit"],
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "INFO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.highlights.customHighlight": {
+    "INFO": {
+      "icon": "info",
+      "foreground": "#fff",
+      "background": "#165ad8",
+      "iconColour": "#165ad8"
+    },
+    "TODO": {
+      "icon": "check-circle",
+      "foreground": "#fff",
+      "background": "#87B3ed",
+      "iconColour": "#87B3ed"
+    },
+    "HACK": {
+      "foreground": "#fff",
+      "background": "#808080",
+      "iconColour": "#808080"
+    },
+    "FIXME": {
+      "foreground": "#fff",
+      "background": "#f6a100",
+      "iconColour": "#f6a100",
+      "icon": "alert"
+    }
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "[typescript]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.tabSize": 4
+  },
+  "[scss]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[json]": {
+    "editor.tabSize": 2
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

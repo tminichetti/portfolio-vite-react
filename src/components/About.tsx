@@ -1,14 +1,11 @@
-import "../styles/style.scss";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { MdWork, MdSchool } from "react-icons/md";
+import "../styles/style.scss";
+import VerticalTimeline from "./vertical-timeline/VerticalTimeline";
 
 const About = () => {
   return (
-    <section id="about" className="bg-slate-700 pb-10">
+    <section className="bg-slate-700 pb-10">
+      <span id="about" className="anchor"></span>
       <div className="outer dark mx-auto ">
         <div className="dot red" />
         <div className="dot amber" />
@@ -31,89 +28,7 @@ const About = () => {
       </div>
 
       <div className="mt-10 text-black">
-        <VerticalTimeline>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: "rgb(0 120 128)", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid rgb(0 120 128)" }}
-            date="2022 - Aujourd'hui"
-            iconStyle={{ background: "rgb(0 120 128)", color: "#fff" }}
-            icon={<MdWork />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Alternance Master - Développeur Web
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">Trendex</h4>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            contentStyle={{ background: "rgb(0, 173, 181)", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid rgb(0, 173, 181)" }}
-            date="2022 - Aujourd'hui"
-            iconStyle={{ background: "rgb(0, 173, 181)", color: "#fff" }}
-            icon={<MdSchool />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Master Manager en architecture et applications logicielles des SI
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">Nice, France</h4>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: "rgb(0 120 128)", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid rgb(0 120 128)" }}
-            date="2021 - 2022"
-            iconStyle={{ background: "rgb(0 120 128)", color: "#fff" }}
-            icon={<MdWork />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Alternance Bachelor - Développeur Web
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">Trendex</h4>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education text-white"
-            contentStyle={{ background: "rgb(0, 173, 181)", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid rgb(0, 173, 181)" }}
-            date="2021 - 2022"
-            iconStyle={{ background: "rgb(0, 173, 181)", color: "#fff" }}
-            icon={<MdSchool />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Bachelor Responsable en ingénierie des logiciels
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">Nice, France</h4>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: "rgb(0 120 128)", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid rgb(0 120 128)" }}
-            date="Février 2021 - Avril 2021"
-            iconStyle={{ background: "rgb(0 120 128)", color: "#fff" }}
-            icon={<MdWork />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Stage - Développeur Web
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">Arcadium</h4>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            contentStyle={{ background: "rgb(0, 173, 181)", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(0, 173, 181)" }}
-            date="2019 - 2021"
-            iconStyle={{ background: "rgb(0, 173, 181)", color: "#fff" }}
-            icon={<MdSchool />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              BTS Services informatiques aux organisations option B solutions
-              logicielles et applications métiers
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Ajaccio, France
-            </h4>
-          </VerticalTimelineElement>
-        </VerticalTimeline>
+        <VerticalTimeline />
       </div>
     </section>
   );
