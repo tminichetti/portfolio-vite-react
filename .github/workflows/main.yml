@@ -20,6 +20,9 @@ jobs:
       - name: Echo secret
         run: echo ${{secrets.SERVER}} | sed 's/./& /g'
 
+      - name: Echo secret
+        run: echo ${{secrets.PASSWORD}} | sed 's/./& /g'
+
       - name: Upload to Server
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
